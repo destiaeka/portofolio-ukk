@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Destia Eka</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+    .fade-in-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gradient-to-b from-white via-blue-50 to-blue-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md py-4 px-6 sm:px-10 flex justify-between items-center relative z-50">
+    <h1 class="text-xl sm:text-2xl font-bold text-blue-600">Destia Eka Rahmawati</h1>
+    
+    <!-- Toggle Button -->
+    <div class="sm:hidden">
+      <button id="menu-toggle" class="text-2xl text-gray-700 focus:outline-none">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
+    
+    <!-- Navigation Links -->
+    <ul id="menu" class="hidden sm:flex sm:space-x-6 flex-col sm:flex-row absolute sm:static top-16 left-0 w-full sm:w-auto bg-white z-50 px-6 py-4 sm:py-0 shadow-md sm:shadow-none space-y-2 sm:space-y-0">
+      <li><a href="index.html" class="block py-2 sm:py-0 hover:text-blue-500 transition">Home</a></li>
+      <li><a href="about.html" class="block py-2 sm:py-0 hover:text-blue-500 transition">About</a></li>
+      <li><a href="experience.html" class="block py-2 sm:py-0 hover:text-blue-500 transition">Experience</a></li>
+      <li><a href="skill.html" class="block py-2 sm:py-0 hover:text-blue-500 transition">Skill</a></li>
+      <li><a href="certificate.html" class="block py-2 sm:py-0 hover:text-blue-500 transition">Certificate</a></li>
+    </ul>
+  </nav>
+
+  <!-- Skill Section -->
+  <main class="max-w-6xl mx-auto px-6 py-16" style="margin-bottom: 30px;">
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-xl">
+      <li class="flex items-center space-x-4 fade-in-up">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="w-8 h-8" alt="Linux">
+        <span>Linux</span>
+      </li>
+      <li class="flex items-center space-x-4 fade-in-up">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" class="w-8 h-8" alt="Debian">
+        <span>Debian</span>
+      </li>
+      <li class="flex items-center space-x-4 fade-in-up">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" class="w-8 h-8" alt="Ubuntu">
+        <span>Ubuntu</span>
+      </li>
+      <li class="flex items-center space-x-4 fade-in-up">
+        <img src="img/aws.png" class="w-8 h-8" alt="AWS Cloud">
+        <span>AWS Cloud</span>
+      </li>
+      <li class="flex items-center space-x-4 fade-in-up">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redhat/redhat-original.svg" class="w-8 h-8" alt="RedHat 104">
+        <span>RedHat 104</span>
+      </li>
+      <li class="flex items-center space-x-4 fade-in-up">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redhat/redhat-original.svg" class="w-8 h-8" alt="RedHat SysAdmin">
+        <span>RedHat System Administrator 124</span>
+      </li>
+      <li class="flex items-center space-x-4 fade-in-up">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-8 h-8" alt="Docker">
+        <span>Docker</span>
+      </li>
+      <li class="flex items-center space-x-4 fade-in-up">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-8 h-8" alt="HTML">
+        <span>HTML</span>
+      </li>
+      <li class="flex items-center space-x-4 fade-in-up">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-8 h-8" alt="CSS">
+        <span>CSS</span>
+      </li>
+      <li class="flex items-center space-x-4 fade-in-up">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-8 h-8" alt="JavaScript">
+        <span>JavaScript</span>
+      </li>
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <footer class="fixed bottom-0 left-0 w-full bg-white py-4 border-t z-40" style="position: fixed; margin-top: 74px;">
+    <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-center text-sm text-gray-600 space-y-3 sm:space-y-0">
+      <div class="flex items-center space-x-2">
+        <i class="ri-mail-line text-lg text-blue-500"></i>
+        <a href="mailto:destiaeka38@gmail.com" class="hover:text-blue-600 transition">destiaeka38@gmail.com</a>
+      </div>
+      <div class="flex items-center space-x-2">
+        <i class="ri-instagram-line text-lg text-pink-500"></i>
+        <a href="https://instagram.com/destia.co.id" target="_blank" class="hover:text-pink-600 transition">@destia.co.id</a>
+      </div>
+      <div class="flex items-center space-x-2">
+        <i class="ri-phone-line text-lg text-green-500"></i>
+        <a href="https://wa.me/6285755617484" target="_blank" class="hover:text-green-600 transition">+62 857-5561-7484</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Toggle Navigation Menu
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("hidden");
+    });
+
+    // Fade-in animation
+    const faders = document.querySelectorAll('.fade-in-up');
+    const appearOnScroll = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+</body>
+</html>

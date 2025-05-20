@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Destia Eka</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+    .fade-in-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white via-blue-50 to-blue-100 text-gray-800">
+
+<!-- Navbar -->
+<nav class="bg-white shadow-md py-4 px-6 sm:px-10">
+  <div class="flex justify-between items-center">
+    <h1 class="text-xl sm:text-2xl font-bold text-blue-600">Destia Eka Rahmawati</h1>
+    <!-- Hamburger -->
+    <div class="sm:hidden">
+      <button id="menu-btn" class="text-2xl focus:outline-none">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
+    <!-- Menu -->
+    <ul id="menu" class="hidden sm:flex sm:space-x-6 flex-col sm:flex-row absolute sm:static top-16 left-0 w-full sm:w-auto bg-white z-50 px-6 py-4 sm:py-0 shadow-md sm:shadow-none space-y-2 sm:space-y-0">
+      <li><a href="index.html" class="hover:text-blue-500 transition block">Home</a></li>
+      <li><a href="about.html" class="hover:text-blue-500 transition block">About</a></li>
+      <li><a href="experience.html" class="hover:text-blue-500 transition block">Experience</a></li>
+      <li><a href="skill.html" class="hover:text-blue-500 transition block">Skill</a></li>
+      <li><a href="certificate.html" class="hover:text-blue-500 transition block">Certificate</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<main class="max-w-4xl mx-auto px-6 py-16 space-y-10">
+  <div class="text-center">
+    <h2 class="text-3xl font-semibold text-blue-700 mb-4 fade-in-up">Experience</h2>
+    <p class="text-lg text-gray-700 fade-in-up">
+      Berikut adalah pengalaman saya yang dapat mendukung keterampilan dan keahlian saya dalam Kompetensi yang saya pelajari
+    </p>
+  </div>
+
+  <!-- Experience Cards -->
+  <div class="space-y-10">
+    <div class="bg-white shadow-md p-6 rounded-lg fade-in-up">
+      <h3 class="text-xl font-semibold text-blue-600">Pemateri Bootcamp Linux Debian <span class="text-gray-500">|| 2024</span></h3>
+      <p class="text-sm text-gray-500 mb-2">Komunitas IT SMKN 1 Nglegok</p>
+      <p class="text-gray-700">Memberikan materi Linux Debian dalam pelatihan komunitas TI. Memandu peserta dalam praktik langsung dan memberikan solusi untuk masalah teknis.</p>
+    </div>
+    <div class="bg-white shadow-md p-6 rounded-lg fade-in-up">
+      <h3 class="text-xl font-semibold text-blue-600">Berpartisipasi dalam Expo & Expose SMK Jatim <span class="text-gray-500">|| 2024</span></h3>
+      <p class="text-sm text-gray-500 mb-2">Expo & Expose Hebatnya SMK Jatim 2024</p>
+      <p class="text-gray-700">Menjadi peserta Expo & Expose Hebatnya SMK Jatim 2024 di bidang Cloud Computing dan ITNSA.</p>
+    </div>
+    <div class="bg-white shadow-md p-6 rounded-lg fade-in-up">
+      <h3 class="text-xl font-semibold text-blue-600">Membangun Web Server menggunakan Wordpress <span class="text-gray-500">|| 2024</span></h3>
+      <p class="text-sm text-gray-500 mb-2">Praktikum Mata Pelajaran System Administrator</p>
+      <p class="text-gray-700">Project membuat website perpustakaan digital tentang salah satu lembaga sekolah. Saya menggunakan WordPress kemudian saya memodifikasinya sesuai permintaan klien.</p>
+    </div>
+    <div class="bg-white shadow-md p-6 rounded-lg fade-in-up" style="margin-bottom: 100px;">
+      <h3 class="text-xl font-semibold text-blue-600">Atswanesa Skill Competition <span class="text-gray-500">|| 2024</span></h3>
+      <p class="text-sm text-gray-500 mb-2">Atswanesa Skill Competition 2024</p>
+      <p class="text-gray-700">Mengikuti perlombaan Atswanesa Skill Competition 2024 pada bidang Subnetting dan System Administrator. Mendapatkan Juara 3 pada bidang System Administrator tingkat Nasional</p>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="fixed bottom-0 left-0 w-full bg-white py-4 border-t z-40" style="position: fixed; margin-top: 74px;">
+  <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-center text-sm text-gray-600 space-y-3 sm:space-y-0">
+    <div class="flex items-center space-x-2">
+      <i class="ri-mail-line text-lg text-blue-500"></i>
+      <a href="mailto:destiaeka38@gmail.com" class="hover:text-blue-600 transition">destiaeka38@gmail.com</a>
+    </div>
+    <div class="flex items-center space-x-2">
+      <i class="ri-instagram-line text-lg text-pink-500"></i>
+      <a href="https://instagram.com/destia.co.id" target="_blank" class="hover:text-pink-600 transition">@destia.co.id</a>
+    </div>
+    <div class="flex items-center space-x-2">
+      <i class="ri-phone-line text-lg text-green-500"></i>
+      <a href="https://wa.me/6285755617484" target="_blank" class="hover:text-green-600 transition">+62 85755617484</a>
+    </div>
+  </div>
+</footer>
+
+<!-- JS for fade-in & toggle -->
+<script>
+  // Fade-in effect
+  const faders = document.querySelectorAll('.fade-in-up');
+  const appearOnScroll = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  faders.forEach(fader => appearOnScroll.observe(fader));
+
+  // Toggle menu
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
